@@ -7,12 +7,15 @@ import requests from "./requests/requests";
 
 //key = https://api.themoviedb.org/3/movie/550?api_key=a0f172841e95f12e34813167e6c854a8
 function App() {
+
+
   return (
     <div className="App">
+
       {/* Nav */}
-      <Nav />
+     <Nav /> 
       {/* Banner */}
-      <Banner />
+     <Banner />
       {/* Rows/posters */}
       <Row
         title="Netflix originals"
@@ -25,9 +28,10 @@ function App() {
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} /> 
     </div>
   );
+
 }
 
 export default App;
